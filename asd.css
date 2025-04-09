@@ -1,0 +1,114 @@
+body {
+    font-family: cursive ,sans-serif ;
+    margin: 20px;
+    background-color: #FFF0F5;
+    color: #333;
+}
+
+h1, h2 {
+    color: #8B0000;
+    margin-bottom: 15px;
+}
+
+h3, h4 {
+    margin: 10px 0;
+    font-weight: normal;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    background-color: #FFFFFF;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #8B0000;
+    text-align: center;
+}
+
+th {
+    background-color: #8B0000;
+    color: #FFFFFF;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100px;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.submit-btn, .clear-btn, .delete-btn, .edit-btn {
+    padding: 5px 10px;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    margin: 2px;
+    border-radius: 4px;
+}
+
+.submit-btn {
+    background-color: #8B0000;
+}
+
+.clear-btn {
+    background-color: #FF4500;
+}
+
+.delete-btn {
+    background-color: #DC143C;
+}
+
+.edit-btn {
+    background-color: #8B0000;
+}
+
+.submit-btn:hover, .clear-btn:hover, .delete-btn:hover, .edit-btn:hover {
+    opacity: 0.9;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+label {
+    display: inline-block;
+    width: 200px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.info-section {
+    background-color: #FFFFFF;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.settings-panel {
+    background-color: #FFFFFF;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.subject-option {
+    margin: 5px 0;
+}
+
+.profile-combinations {
+    margin-top: 15px;
+    font-style: italic;
+    color: #555;
+}
+
+.support{
+    opacity: 0.5;
+    font-size: 9px;
+}

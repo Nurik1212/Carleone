@@ -1,0 +1,116 @@
+*{
+    font-family: cursive;
+}
+
+body {
+    background-color:rgb(170, 98, 98);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #ffffff;
+    background: url(https://kartinki.pics/pics/uploads/posts/2022-08/1661499085_1-kartinkin-net-p-fon-dlya-saita-krasivo-1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.register-container {
+    padding: 2.5rem;
+    border-radius: 50px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    backdrop-filter: blur(15px);    
+    box-shadow: 0 0 75px;
+}
+
+h1 {
+    color: #ffffff; 
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.form-group input::placeholder{
+    color: #fff;
+}
+
+.form-group i{
+    position: relative;
+    margin: 8px 0;
+    position: absolute;
+    font-size: 35px; 
+    right: 50px;
+    
+}
+
+input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    background: transparent;
+    font-size: 16px;
+    color: #fff;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: rgb(115, 53, 139);
+}
+
+.register-btn {
+    width: 100%;
+    height: 45px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background: #fff;
+    box-shadow: 0 0 5px rgb(0, 0, 0,.1);
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.register-btn:hover {
+    background-color: #9928b6;
+}
+
+.footer {
+    margin-top: 1.5rem;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.footer a {
+    color: #e9e9e9;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 480px) {
+    .register-container {
+        padding: 1.5rem;
+        margin: 0 1rem;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+}

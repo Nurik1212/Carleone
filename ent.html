@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЕНТ - Результаты</title>
+    <link rel="stylesheet" href="asd.css">
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>ЕНТ - Единое Национальное Тестирование</h1>
+
+    <div class="info-section">
+        <h2>Что такое ЕНТ?</h2>
+        <p><h4>Единое Национальное Тестирование (ЕНТ) — это система оценки знаний выпускников школ в Казахстане,
+        которая используется для поступления в высшие учебные заведения. ЕНТ включает тесты по основным предметам,
+        таким как Математическая грамотность, Грамотность чтения, История Казахстана и другие.</h4></p>
+    </div>
+
+    <div class="info-section">
+        <h2>Предметы ЕНТ</h2>
+        <ul id="subjectsList">
+            <li>Математическая грамотность</li>
+            <li>Грамотность чтения</li>
+            <li>История Казахстана</li>
+            <li>Математика</li>
+            <li>Физика</li>
+        </ul>
+        <div class="profile-combinations">
+            Доступные комбинации профильных предметов: математика + физика, математика+география, 
+            всемирная история + география, биология + химия, биология + география, 
+            английский + всемирная история, география+английский, химия + физика,
+            всемирная история + основы права, математика + информатика
+        </div>
+        <button class="edit-btn" id="editProfileSubjectsBtn">Изменить профильные предметы</button>
+    </div>
+
+    <div class="settings-panel" id="profileSubjectsPanel">
+        <h3>Выбор профильных предметов</h3>
+        <p>Выберите 2 предмета, которые будут профильными (по 50 баллов):</p>
+        <div class="subject-option">
+            <input type="checkbox" id="mathCheckbox" checked>
+            <label for="mathCheckbox">Математика</label>
+        </div>
+        <div class="subject-option">
+            <input type="checkbox" id="physicsCheckbox" checked>
+            <label for="physicsCheckbox">Физика</label>
+        </div>
+        <div class="subject-option">
+            <input type="checkbox" id="geographyCheckbox">
+            <label for="geographyCheckbox">География</label>
+        </div>
+        <div class="subject-option">
+            <input type="checkbox" id="worldHistoryCheckbox">
+            <label for="worldHistoryCheckbox">Всемирная история</label>
+        </div>
+        <div class="subject-option">
+            <input type="checkbox" id="biologyCheckbox">
+            <label for="biologyCheckbox">Биология</label>
+        </div>
+        <div class="subject-option">
+            <input type="checkbox" id="chemistryCheckbox">
+            <label for="chemistryCheckbox">Химия</label>
+        </div>
+        <div class="subject-option">
+            <input type="checkbox" id="englishCheckbox">
+            <label for="englishCheckbox">Английский язык</label>
+        </div>
+        <div class="subject-option">
+            <input type="checkbox" id="lawCheckbox">
+            <label for="lawCheckbox">Основы права</label>
+        </div>
+        <div class="subject-option">
+            <input type="checkbox" id="informaticsCheckbox">
+            <label for="informaticsCheckbox">Информатика</label>
+        </div>
+        <br>
+        <button class="submit-btn" id="saveProfileSubjectsBtn">Сохранить</button>
+        <button class="clear-btn" id="cancelProfileSubjectsBtn">Отмена</button>
+    </div>
+
+    <div class="info-section">
+        <h2>Формат тестирования</h2>
+        <p><h3>ЕНТ состоит из <span id="totalMaxScore">140</span> баллов, разделенных на 5 предмета:</h3></p>
+        <ul>
+            <li><strong>Математическая грамотность:</strong> 10 баллов</li>
+            <li><strong>Грамотность чтения:</strong> 10 баллов</li>
+            <li><strong>История Казахстана:</strong> 20 баллов</li>
+            <li><strong id="firstProfileSubject">Математика:</strong> 50 баллов</li>
+            <li><strong id="secondProfileSubject">Физика:</strong> 50 баллов</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>Добавьте свои результаты ЕНТ</h2>
+        <form id="entResultsForm">
+            <label for="studentName">Фамилия и имя:</label>
+            <input type="text" id="studentName" name="studentName" required>
+            <br>
+            <label for="mathLitScore">Математическая грамотность:</label>
+            <input type="number" id="mathLitScore" name="mathLitScore" min="0" max="10" required>
+            <br>
+            <label for="readingScore">Грамотность чтения:</label>
+            <input type="number" id="readingScore" name="readingScore" min="0" max="10" required>
+            <br>
+            <label for="historyScore">История Казахстана:</label>
+            <input type="number" id="historyScore" name="historyScore" min="0" max="20" required>
+            <br>
+            <label for="firstProfileScore" id="firstProfileLabel">Математика:</label>
+            <input type="number" id="firstProfileScore" name="firstProfileScore" min="0" max="50" required>
+            <br>
+            <label for="secondProfileScore" id="secondProfileLabel">Физика:</label>
+            <input type="number" id="secondProfileScore" name="secondProfileScore" min="0" max="50" required>
+            <br><br>
+            <button type="submit" class="submit-btn">Добавить результаты</button>
+        </form>
+    </div>
+
+    <div class="info-section">
+        <h2>Результаты участников</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Фамилия и имя</th>
+                    <th>Математическая грамотность</th>
+                    <th>Грамотность чтения </th>
+                    <th>История</th>
+                    <th id="firstProfileHeader">Математика</th>
+                    <th id="secondProfileHeader">Физика</th>
+                    <th>Всего</th>
+                    <th>Действия</th>
+                </tr>
+            </thead>
+            
+            <tbody id="entResultsTable">
+                <!-- Результаты будут добавляться сюда -->
+            </tbody>
+        </table>
+        <button class="clear-btn" id="clearEntResultsBtn">Очистить все результаты</button>
+    </div>
+
+    <u class="support"><center>Этот сайт не предназначен для Мобильных устройств. 
+        Мобильная версия сайта еще в разработке.</center>
+    </u>
+
+    <script src="main2.js"></script>
+</body>
+</html>

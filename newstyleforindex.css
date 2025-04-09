@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive, sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(170, 98, 98);
+    background-image: url(https://kartinki.pics/pics/uploads/posts/2022-08/1661499085_1-kartinkin-net-p-fon-dlya-saita-krasivo-1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.login{
+    width: 420px;
+    box-shadow: 0 0 50px;
+    color: rgba(255, 255, 255, 0.932);
+    border-radius: 35px;
+    padding: 15px 15px 15px 15px;
+    backdrop-filter: blur(5px);
+    /* background-color: rgb(169, 72, 72); */
+}
+
+.login h1{
+    font-size: 30px;
+    text-align: center;
+}
+
+.login .input-box{
+    width: 100%;
+    height: 50px;
+    margin: 25px 0;
+    position: relative;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    border: 2px solid white;
+    border-radius: 50px;
+    font-size: 16px;
+    color: #ffffff;
+    padding: 20px 20px 20px 15px;
+}
+
+input:focus{
+    outline: none;
+    border-color: rgb(115, 53, 139);
+}
+
+.input-box input::placeholder{
+    color: #ffffff;
+}
+
+.input-box i{
+    position: absolute;
+    right: 9px;
+    top: 14%;
+    font-size: 35px;
+}
+
+.login .remember{
+    display: flex;
+    justify-content: center;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.remember a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.remember a:hover{
+    text-decoration: underline;
+}
+
+.login .btn{
+    width: 100%;
+    height: 45px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background: #fff;
+    box-shadow: 0 0 10px rgb(0, 0, 0,.1);
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.btn:hover{
+    background-color: #9928b6;
+}
+
+.login .register{
+    font-size: 14.5px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.register p a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.register p a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    .register-container {
+        padding: 1.5rem;
+        margin: 0 1rem;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+}
